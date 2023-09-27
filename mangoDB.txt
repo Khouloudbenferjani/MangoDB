@@ -1,0 +1,92 @@
+mongo db
+
+//create data base named contact 
+
+//use contact
+switch or creation of db
+
+//db.createcollection ("contactlist")
+to create collection named "contact list"
+
+//show dbs
+show the name of the new user 
+
+//show collection 
+
+//db.contactlist.find()
+
+//db.contactlist.insert({lastname:'...', firstname:'...'......})
+
+//db.contactlist.insertMany([
+
+{lastname:'kefi',
+firstname:'saif',
+email:'saif@gmail.com',
+age:15},
+{
+lastname:'fatnassi',
+firstname:'sarra',
+email:'sarra@gmail.com',
+age:40},
+{
+lastname:'Ben yahya',
+firstname:'Rym',
+email:'rym@gmail.com',
+age:27},
+{
+lastname:'cherif',
+firstname:'sami',
+email:'sami@gmail.com',
+age:3}]
+)
+
+
+*to show more than one person specification in one time 
+
+//db.contactlist.find()
+
+show the id of the lastone
+
+{lastname:'kefi',
+firstname:'saif',
+email:'saif@gmail.com',
+age:15},
+{
+lastname:'fatnassi',
+firstname:'sarra',
+email:'sarra@gmail.com',
+age:40},
+{
+lastname:'Ben yahya',
+firstname:'Rym',
+email:'rym@gmail.com',
+age:27},
+{
+lastname:'cherif',
+firstname:'sami',
+email:'sami@gmail.com',
+age:3}]
+)
+
+//db.contactlist.find().pretty()
+
+to show the list in order 
+
+//db.contactlist.find({firstname:"Rym"})
+to show the id of a specefic person
+
+//db.contactlist.find({"_id": ObjectId("65133884dad1b943fc61eea1")})
+to show the specification by id 
+
+//db.contactlist.find({age:{$gt:18}}).pretty
+to show those older than 18 with order
+lt<18
+
+//db.contactlist.remove({firstname:"fares"})
+delete by first name
+
+//db.contactlist.find({age:{$gt:18},"lastname":{$regex:"ah"}}).pretty()
+to show with 2 condtions >18 & contains ah 
+
+//db.contactlist.update({firstname:"Saif"},{$set:{firstname:"ahmed"}})
+to modify a user by firstname
